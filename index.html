@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleverLearn - Bookmarklets, Proxies & Games</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+            background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHR3Yjd3eGIzdDc2MngybDE1OGkxa3ZkNTRsNWEwMTBhbGVncXA0NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IpSc0bp7LmGC4/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.7);
+        }
+        .item {
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s;
+            color: white;
+            font-size: 1.2em;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .copy-btn {
+            padding: 10px 20px;
+            border: none;
+            background: white;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .copy-btn:hover {
+            background: lightgrey;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CleverLearn - Bookmarklets, Proxies & Games</h1>
+        
+        <h2>Proxies</h2>
+        <div class="item"><a href="https://wise-lake-458.sz.games/" target="_blank">Wise Lake Proxy</a></div>
+        <div class="item"><a href="https://wild-lion-535.shuttlemath.com/" target="_blank">Wild Lion Proxy</a></div>
+        <div class="item"><a href="https://brave-fox-811.shuttlemath.com/" target="_blank">Brave Fox Proxy</a></div>
+        <div class="item"><a href="https://smart-lion-898.sz.games/" target="_blank">Smart Lion Proxy</a></div>
+        <div class="item"><a href="https://swift-cloud-873.scientificsense.org/" target="_blank">Swift Cloud Proxy</a></div>
+        <div class="item"><a href="https://sunny-tiger-638.scientificsense.org/" target="_blank">Sunny Tiger Proxy</a></div>
+        <div class="item"><a href="https://chess.com.breakingpar.com/" target="_blank">Chess Proxy</a></div>
+        <div class="item"><a href="https://www.classroom.google.com.l5.ca/" target="_blank">Google Classroom Proxy</a></div>
+        <div class="item"><a href="https://incog.works/" target="_blank">Incog Proxy</a></div>
+        
+        <h2>Games</h2>
+        <div class="item"><a href="https://www.definitelymath.com/" target="_blank">Definitely Math</a></div>
+        <div class="item"><a href="https://www.pizzaedition.one" target="_blank">Pizza Edition</a></div>
+        <div class="item"><a href="https://a-class.net/" target="_blank">A-Class</a></div>
+        <div class="item"><a href="https://geography-lesson-2.us/" target="_blank">Geography Lesson 2</a></div>
+        <div class="item"><a href="https://nullxiety.com/" target="_blank">Nullxiety</a></div>
+        <div class="item"><a href="https://object-lesson.github.io/" target="_blank">Object Lesson</a></div>
+        <div class="item"><a href="https://eaglercraft.q13x.com/" target="_blank">Eaglercraft</a></div>
+        <div class="item"><a href="https://classroom.community/app2/Google/" target="_blank">Classroom Community</a></div>
+        <div class="item"><a href="https://teespure.com/" target="_blank">TeesPure</a></div>
+        <div class="item"><a href="https://99v.org/" target="_blank">99v</a></div>
+        <div class="item"><a href="https://sz.games/?ref=shuttle" target="_blank">SZ Games</a></div>
+        
+        <h2>Bookmarklets</h2>
+        <div class="item">
+            <p>Skip CoolMathGames ads instantly with this bookmarklet!</p>
+            <input type="text" value="javascript:cmg_remove_padg();" id="bookmarklet2" readonly>
+            <button class="copy-btn" onclick="copyToClipboard('bookmarklet2')">Copy</button>
+        </div>
+    </div>
+    
+    <script>
+        function copyToClipboard(id) {
+            var copyText = document.getElementById(id);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); 
+            navigator.clipboard.writeText(copyText.value);
+            alert("Copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
